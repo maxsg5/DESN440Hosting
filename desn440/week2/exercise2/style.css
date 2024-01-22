@@ -1,0 +1,396 @@
+body {
+    /* background-color: #d06c08; */
+    background-color: #f9f5f1;
+
+}
+h2{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'Hellenic Typewriter', sans-serif;
+}
+
+.custom-card {
+    background-color: white;
+}
+
+.img-fix {
+    top: 12%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+}
+
+p {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Chromatica', sans-serif;
+}
+
+.custom-button {
+    color: #000;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    border: solid 1px black;
+    box-shadow: 6px 6px 0 0 #bfb33b;
+    float: right;
+    background-color: white;
+    /* position: absolute; */
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 7%;
+    transform: translate(0%, 50%);
+    font-family: 'Hellenic Typewriter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 770px) {
+    .custom-button {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* .homepage-right {
+        top: 12%;
+        bottom: 0%;
+        left: auto;
+        right: 0%;
+    } */
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Thin.woff2') format('woff2'),
+        url('HellenicTypewriter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-ThinItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Thin.woff2') format('woff2'),
+        url('HellenicTypewriter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-ThinItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-ThinItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Regular.woff2') format('woff2'),
+        url('HellenicTypewriter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Regular.woff2') format('woff2'),
+        url('HellenicTypewriter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Regular.woff2') format('woff2'),
+        url('HellenicTypewriter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-RegularItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Medium.woff2') format('woff2'),
+        url('HellenicTypewriter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-MediumItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Medium.woff2') format('woff2'),
+        url('HellenicTypewriter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-MediumItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-LightItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Medium.woff2') format('woff2'),
+        url('HellenicTypewriter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-MediumItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Bold.woff2') format('woff2'),
+        url('HellenicTypewriter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-BoldItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Bold.woff2') format('woff2'),
+        url('HellenicTypewriter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Light.woff2') format('woff2'),
+        url('HellenicTypewriter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Thin.woff2') format('woff2'),
+        url('HellenicTypewriter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-BoldItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Bold.woff2') format('woff2'),
+        url('HellenicTypewriter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Light.woff2') format('woff2'),
+        url('HellenicTypewriter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-RegularItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-BoldItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-RegularItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-Light.woff2') format('woff2'),
+        url('HellenicTypewriter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-LightItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellenic Typewriter';
+    src: url('HellenicTypewriter-LightItalic.woff2') format('woff2'),
+        url('HellenicTypewriter-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('Chromatica-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
