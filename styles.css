@@ -1,3 +1,17 @@
+* {
+    font-family: 'Chromatica';
+}
+
 .title {
     color: green;
+}
+
+@font-face {
+    font-family: 'Chromatica';
+    src: url('./fonts/ChromaticaTrial-Regular.otf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Hellenic';
+    src: url('./fonts/HellenicTypewriterTrial-Regular.otf') format('woff2');
 }
