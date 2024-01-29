@@ -65,6 +65,12 @@ p {
     color: #000000;
 }
 
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
 .nav-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
