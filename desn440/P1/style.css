@@ -12,6 +12,7 @@
 
 body {
     background-color: #ACD9D8;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -237,6 +238,41 @@ hr {
     background-color: #3a6561;
     color: white;
 } */
+
+
+/* Custom CSS to make the first column of a table sticky */
+.table-responsive {
+    overflow-x: auto;
+  }
+  
+  .table thead th:first-child, 
+  .table tbody td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #fff; /* Change this to match your table's background color */
+    z-index: 2;
+  }
+  
+  /* This is to ensure the z-index of the sticky column is higher than the other elements */
+  .table thead th {
+    z-index: 1;
+  }
+  
+  /* Optional: Style to indicate that the table is scrollable */
+  .table-responsive::-webkit-scrollbar {
+    height: 0.75rem;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+    border-radius: 0.75rem;
+  }
+  
+  .table-responsive::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
 
 /* IDs */
 

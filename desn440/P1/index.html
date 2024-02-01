@@ -13,83 +13,113 @@
 
 <body>
 
-    <header class="container-fluid">
-        <!-- <div class="container">
-            <div>
-                <span class="logo">ASFF</span>
-                <hr>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Expand at xl</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06"
+                aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample06">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown06">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Search">
+                </form>
             </div>
-            <br>
-        </div> -->
-    </header>
-    <nav id="navbar-custom" class="navbar navbar-expand-sm fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="logo">ASFF</span></a>
-            <button id="NavButton" class="nav-item btn d-xl-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
-            <div class="d-none d-xl-block">
-                <ul class="navbar-nav nav-tabs nav-fill">
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section1">Project Overview</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section3">Timeline and Milestones</a>
-                    </li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a>
-                    </li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section5">Design and Technical
-                            Requirements</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section8">Testing and Quality
-                            Assurance</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section10">Risk Management</a></li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section11">Post-launch Strategy</a>
-                    </li>
-                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
+        </nav>
+        <!-- <nav id="navbar-custom" class="navbar navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span class="logo">ASFF</span></a>
+                <button id="NavButton" class="nav-item btn d-xl-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+                <div class="d-none d-xl-block">
+                    <ul class="navbar-nav nav-tabs nav-fill">
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section1">Project Overview</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section3">Timeline and
+                                Milestones</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section5">Design and Technical
+                                Requirements</a></li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section8">Testing and Quality
+                                Assurance</a></li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section10">Risk Management</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section11">Post-launch
+                                Strategy</a>
+                        </li>
+                        <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#section1">Project Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section3">Timeline and Milestones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section5">Design and Technical Requirements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section8">Testing and Quality Assurance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section10">Risk Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section11">Post-launch Strategy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
                     <!-- Add other sections as needed -->
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#section1">Project Overview</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section3">Timeline and Milestones</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section5">Design and Technical Requirements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section8">Testing and Quality Assurance</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section10">Risk Management</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section11">Post-launch Strategy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
-                <!-- Add other sections as needed -->
-            </ul>
-        </div>
     </div>
-
-    <div data-bs-spy="scroll" data-bs-target="#navbar-custom" data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        <!-- Hero section -->
-        <section>
-            <div class="container-fluid hero py-5">
-                <div class="row">
-                    <div class="col d-flex justify-content-center my-5">
-                        <div class="text-center">
-                            <h1>Atlantis Short Film Festival</h1>
-                            <h3>Project Proposal: Team Emerald</h3>
-                        </div>
+    <!-- Hero section -->
+    <section>
+        <div class="container-fluid hero py-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center my-5">
+                    <div class="text-center">
+                        <h1>Atlantis Short Film Festival</h1>
+                        <h3>Project Proposal: Team Emerald</h3>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-custom" data-bs-smooth-scroll="true" class="" tabindex="0">
 
         <div style="background-color: #ACD9D8;">
             <section class="projectOverview pb-5">
@@ -183,55 +213,59 @@
                                 <div id="collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Team Member</th>
-                                                    <th scope="col">Strengths</th>
-                                                    <th scope="col">Role(s)</th>
-                                                    <th scope="col">Responsibilities</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row">Dana Velencia</td>
-                                                    <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool</td>
-                                                    <td>Project Plan Contributor</td>
-                                                    <td>Make sure I actually do stuff</td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">Angeline Santos</td>
-                                                    <td>Time management, organization, Design, Adobe Suite, XD,
-                                                    </td>
-                                                    <td>Project Plan Contributor
-                                                    </td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">Jehdi Aizon</td>
-                                                    <td>Management, Adaptable, Coding, Creative
-                                                    </td>
-                                                    <td>Project Plan Contributor
-                                                    </td>
-                                                    <td>Team Lead
-                                                        Ensuring schedules and deadlines are met
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">Max Schafer</td>
-                                                    <td>Programming, Technical skills
-                                                    </td>
-                                                    <td>Project Plan Contributor</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">Dominic Yuschyshyn</td>
-                                                    <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS</td>
-                                                    <td>Project Plan Contributor</td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Team Member</th>
+                                                        <th scope="col">Strengths</th>
+                                                        <th scope="col">Role(s)</th>
+                                                        <th scope="col">Responsibilities</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">Dana Velencia</td>
+                                                        <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool
+                                                        </td>
+                                                        <td>Project Plan Contributor</td>
+                                                        <td>Make sure I actually do stuff</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Angeline Santos</td>
+                                                        <td>Time management, organization, Design, Adobe Suite, XD,
+                                                        </td>
+                                                        <td>Project Plan Contributor
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Jehdi Aizon</td>
+                                                        <td>Management, Adaptable, Coding, Creative
+                                                        </td>
+                                                        <td>Project Plan Contributor
+                                                        </td>
+                                                        <td>Team Lead
+                                                            Ensuring schedules and deadlines are met
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Max Schafer</td>
+                                                        <td>Programming, Technical skills
+                                                        </td>
+                                                        <td>Project Plan Contributor</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">Dominic Yuschyshyn</td>
+                                                        <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS
+                                                        </td>
+                                                        <td>Project Plan Contributor</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -296,55 +330,59 @@
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="custom-card">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Team Member</th>
-                                        <th scope="col">Strengths</th>
-                                        <th scope="col">Role(s)</th>
-                                        <th scope="col">Responsibilities</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td scope="row">Dana Velencia</td>
-                                        <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool</td>
-                                        <td>Project Plan Contributor</td>
-                                        <td>Make sure I actually do stuff</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Angeline Santos</td>
-                                        <td>Time management, organization, Design, Adobe Suite, XD,
-                                        </td>
-                                        <td>Project Plan Contributor
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Jehdi Aizon</td>
-                                        <td>Management, Adaptable, Coding, Creative
-                                        </td>
-                                        <td>Project Plan Contributor
-                                        </td>
-                                        <td>Team Lead
-                                            Ensuring schedules and deadlines are met
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Max Schafer</td>
-                                        <td>Programming, Technical skills
-                                        </td>
-                                        <td>Project Plan Contributor</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Dominic Yuschyshyn</td>
-                                        <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS</td>
-                                        <td>Project Plan Contributor</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <!-- Your existing table goes here -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Team Member</th>
+                                            <th scope="col">Strengths</th>
+                                            <th scope="col">Role(s)</th>
+                                            <th scope="col">Responsibilities</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">Dana Velencia</td>
+                                            <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool</td>
+                                            <td>Project Plan Contributor</td>
+                                            <td>Make sure I actually do stuff</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Angeline Santos</td>
+                                            <td>Time management, organization, Design, Adobe Suite, XD,
+                                            </td>
+                                            <td>Project Plan Contributor
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Jehdi Aizon</td>
+                                            <td>Management, Adaptable, Coding, Creative
+                                            </td>
+                                            <td>Project Plan Contributor
+                                            </td>
+                                            <td>Team Lead
+                                                Ensuring schedules and deadlines are met
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Max Schafer</td>
+                                            <td>Programming, Technical skills
+                                            </td>
+                                            <td>Project Plan Contributor</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Dominic Yuschyshyn</td>
+                                            <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS</td>
+                                            <td>Project Plan Contributor</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
                     </div>
                 </div>
