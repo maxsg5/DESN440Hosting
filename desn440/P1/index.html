@@ -2,212 +2,1024 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project1 Plan</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DESN 440 - Team Emerald - Project Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="pb-5">
-    <nav id="navbar-custom" class="navbar fixed-top px-3 mb-3">
-      <a class="navbar-brand" href="#"><span class="logo">ASFF</span></a>
-      <ul class="nav nav-pills gap-1  justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">Project Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Scope of Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading3">Timeline and Milestones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading4">Launch Plan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading5">Post-Launch Strategy</a>
-        </li>
-      </ul>
+
+    <header class="container-fluid">
+        <!-- <div class="container">
+            <div>
+                <span class="logo">ASFF</span>
+                <hr>
+            </div>
+            <br>
+        </div> -->
+    </header>
+    <nav id="navbar-custom" class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="logo">ASFF</span></a>
+            <button id="NavButton" class="nav-item btn d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+            <div class="d-none d-xl-block">
+                <ul class="navbar-nav nav-tabs nav-fill">
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section1">Project Overview</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section3">Timeline and Milestones</a>
+                    </li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a>
+                    </li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section5">Design and Technical
+                            Requirements</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section8">Testing and Quality
+                            Assurance</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section10">Risk Management</a></li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section11">Post-launch Strategy</a>
+                    </li>
+                    <li id="MenuItem" class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
+                    <!-- Add other sections as needed -->
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <!-- <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><span class="logo">ASFF</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <h6>Home</h6>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </div>
-    </nav> -->
-
-  </header>
-
-  <section>
-    <div class="container-fluid text-center">
-      <div class="row mt-5">
-        <h1 class="mt-5">Atlantis Short Film Festival</h1>
-      </div>
-      <div class="row pb-5">
-        <h3>Project Proposal: Team Emerald</h3>
-      </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#section1">Project Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section2">Scope of Work</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section3">Timeline and Milestones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section4">Resources and Budget</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section5">Design and Technical Requirements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section6">UX and UI Design</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section7">Content Strategy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section8">Testing and Quality Assurance</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section9">Launch Plan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section10">Risk Management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section11">Post-launch Strategy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#section12">Appendix</a></li>
+                <!-- Add other sections as needed -->
+            </ul>
+        </div>
     </div>
-  </section>
 
-  <section id="ProjectOverview">
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
-      <div class="container-fluid">
-        <div class="row text-center my-5">
-          <h2 id="scrollspyHeading1">Project Overview</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="accordion pb-5" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h3>
-                      Project Description
-                    </h3>
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Atlantis Short Film Festival immerses its audience through the power of storytelling in various
-                      genres.
-                      Emerging filmmakers' works are dynamically showcased on the website– hoping to inspire future
-                      filmmakers. Atlantis Short Film Festival aims to bolster and nurture amateur filmmakers, while we
-                      create
-                      a dynamic and captivating hub to showcase various films.</p>
-                  </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-custom" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <!-- Hero section -->
+        <section>
+            <div class="container-fluid hero py-5">
+                <div class="row">
+                    <div class="col d-flex justify-content-center my-5">
+                        <div class="text-center">
+                            <h1>Atlantis Short Film Festival</h1>
+                            <h3>Project Proposal: Team Emerald</h3>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="accordion pb-5" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  <h3>
-                    Website Objective and Goals
-                  </h3>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Atlantis Short Film Festival immerses its audience through the power of storytelling in various
-                    genres.
-                    Emerging filmmakers' works are dynamically showcased on the website– hoping to inspire future
-                    filmmakers. Atlantis Short Film Festival aims to bolster and nurture amateur filmmakers, while we
-                    create
-                    a dynamic and captivating hub to showcase various films.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
 
+        <div style="background-color: #ACD9D8;">
+            <section class="projectOverview pb-5">
+                <div class="container ">
+                    <div class="row py-5">
+                        <h2 id="section1" class="py-3">Project Overview</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Project Description</h3>
+                                <p>Atlantis Short Film Festival immerses its audience through the power of storytelling
+                                    in
+                                    various genres. Emerging filmmakers' works are dynamically showcased on the website–
+                                    hoping to inspire future filmmakers. Atlantis Short Film Festival aims to bolster
+                                    and
+                                    nurture amateur filmmakers, while we create a dynamic and captivating hub to
+                                    showcase
+                                    various films.</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Website Objective and Goals</h3>
+                                <ul>
+                                    <li>Responsive Design</li>
+                                    <li>Celebrates and showcases amateur filmmakers</li>
+                                    <li>Engaging and user-friendly website </li>
+                                    <li>Simple content management for their team with minimal technical expertise</li>
+                                    <li>Streamlined digital submission process</li>
+                                    <li>Attracts diverse range of film genres</li>
+                                    <li>Displays three previous winners in each category</li>
+                                    <li>Inspires and attracts new submissions</li>
+                                    <li>Highlight each category/genre</li>
+                                    <li>Website launch: Summer</li>
+                                    <li>Free and accessible file submission and viewing process</li>
+                                    <li>Acknowledge sponsorship from PBS.org</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 id="section2" class="py-3">Scope of Work</h2>
+                    </div>
+                    <div class="row row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Deliverables</h3>
+                                <p>Project Plan (HTML & CSS designed) Research User definition Competitive Analysis
+                                    Features
+                                    Responsive Showcases amateur filmmakers Streamlined digital submission process
+                                    Displays
+                                    three previous winners Update Guide PDF and requirement documents Website mock-up
+                                    Process Wireframes Sketches Style Tile Persona Site map User Journey Key interview
+                                    points Moodboard Specifications of design and functionality. Responsive design
+                                    Engaging
+                                    and user-friendly website Streamlined digital submission process Free and accessible
+                                    file submission and viewing process</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Content Requirements</h3>
+                                <p>Short film length: maximum of fifteen (15) minutes
+                                    https://youtu.be/CWnqX41JHuM?si=_YsJMZFkv3D3KAr_
+                                    https://youtu.be/8k1axb8PPqQ?feature=shared
+                                    https://youtu.be/4qCbiCxBd2M?si=nZVt06YAZJwIoCGl
+                                    https://youtu.be/CAYDRIbXFAc?si=OivyJCR9DCgAcf2A
+                                    https://youtu.be/mVLrBJYGxk4?si=Sj3X53EY6N7imHd2 Personal etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div style="background-color: #F8F4EB;">
+            <section class="timeline pb-5">
+                <div id="section3" class="container">
+                    <div class="row py-5">
+                        <div class="accordion pb-5" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h2 class="py-3">Timeline and Milestones:</h2>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>BODY TEXT HERE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Design Technical Requirements</h3>
+                                <p>Design guidelines (branding, color schemes, typography). Style Tile Branding Color,
+                                    typography, design elements (patterns, etc.) Technical specifications (platforms,
+                                    languages, frameworks). WebFlow CMS Responsiveness and accessibility considerations.
+                                    Responsive to various screen sizes and devices. (desktop, mobile)</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>User Experience (UX) and User Interface (UI) Design</h3>
+                                <p>Strategic & creative direction ⚡️ Appeal to target audience Through engaging and
+                                    dynamic presentation of films Wireframes (lo-fi) of key pages or features. Insert
+                                    wire frames here Navigation structure and user flow. Site map Interactive elements
+                                    and visual design aspects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Content Strategy</h3>
+                                <p>SEO strategy for content optimization. ** your ‘best guess’ for now* Keyword Research
+                                    Relevant keywords to short films, film festivals, and specific event details On-Page
+                                    SEO Title tags and meta descriptions URL structure Header tags Image ALT text Social
+                                    Media Integration Add social media sharing buttons (Instagram, Facebook, Twitter/X)
+                                    Analytics and Monitoring Google Analytics Schema Markup UX Responsive design</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Testing & Quality Assurance</h3>
+                                <p>User-Centered Design User Research User Flows Visual Design Consistency Typography
+                                    and Color Scheme Legibility Design for compliance with accessibility standards
+                                    (e.g., WCAG) Interactivity and Animation Responsive Information Architecture (IA)
+                                    Content Hierarchy—organization of content and info hierarchy Consistent
+                                    Navigation—navigation elements are consistent and provide clear path for users
+                                    Usability Testing User Testing Results Wireframes and Prototypes Final design aligns
+                                    with approved wireframes Collaboration and Communication Feedback Implementation
+                                    Documentation—Review design documentation for completion and accuracy Client
+                                    Requirements Alignment with goals—Design aligns with the overall goals and
+                                    objectives of the project Scalability and Future Considerations design is scalable
+                                    for future updates or additional features</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 id="section4" class="py-3">Resources</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Team Member</th>
+                                        <th scope="col">Strengths</th>
+                                        <th scope="col">Role(s)</th>
+                                        <th scope="col">Responsibilities</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Dana Velencia</td>
+                                        <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool</td>
+                                        <td>Project Plan Contributor</td>
+                                        <td>Make sure I actually do stuff</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Angeline Santos</td>
+                                        <td>Time management, organization, Design, Adobe Suite, XD,
+                                        </td>
+                                        <td>Project Plan Contributor
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Jehdi Aizon</td>
+                                        <td>Management, Adaptable, Coding, Creative
+                                        </td>
+                                        <td>Project Plan Contributor
+                                        </td>
+                                        <td>Team Lead
+                                            Ensuring schedules and deadlines are met
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Max Schafer</td>
+                                        <td>Programming, Technical skills
+                                        </td>
+                                        <td>Project Plan Contributor</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Dominic Yuschyshyn</td>
+                                        <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS</td>
+                                        <td>Project Plan Contributor</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 class="py-3">Launch Plan</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Post-Launch Support and Maintenance Strategy</h3>
+                                <p>Hand-off document User Training—e.g. how to edit the code, add content Branding
+                                    guidelines—e.g. Typefaces and colors in use Mock-up references Code and development
+                                    team will provide support for 31 days after hand-in of final deliverables. Domain
+                                    and server renewal every January 29 with the cost of [insert $]. Analytics Website
+                                    analytic tools (Google Analytics)</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Contingency Plans</h3>
+                                <p>Identification of potential risks and challenges. Design Challenges Lack of user
+                                    research Design does not align with client needs and wants User feels overwhelmed by
+                                    information on the website Lack of clarity, legibility, and hierarchy Low
+                                    accessibility— e.g low contrast, non-descriptive text links, websites accessible to
+                                    various devices, etc. Bugs, or technical malfunctions that affect user experience.
+                                    Technical Failures Hosting server failures Scalability concerns - Inability to
+                                    handle increased traffic to the website Responsive design may have limitations due
+                                    to coding ability Communication Lack of information exchange when information are
+                                    revised or added Client is unresponsive Budget Financial constraints hosting costs
+                                    Client refusing to pay Time and resource management Tasks are facing unexpected
+                                    delays Resource intensive Content management File management Copyright Keeping data
+                                    secure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div style="background-color: #F8F4EB;">
+            <section class="timeline pb-5">
+                <div id="section3" class="container">
+                    <div class="row py-5">
+                        <div class="accordion pb-5" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h2 class="py-3">Timeline and Milestones:</h2>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>BODY TEXT HERE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Design Technical Requirements</h3>
+                                <p>Design guidelines (branding, color schemes, typography). Style Tile Branding Color,
+                                    typography, design elements (patterns, etc.) Technical specifications (platforms,
+                                    languages, frameworks). WebFlow CMS Responsiveness and accessibility considerations.
+                                    Responsive to various screen sizes and devices. (desktop, mobile)</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>User Experience (UX) and User Interface (UI) Design</h3>
+                                <p>Strategic & creative direction ⚡️ Appeal to target audience Through engaging and
+                                    dynamic presentation of films Wireframes (lo-fi) of key pages or features. Insert
+                                    wire frames here Navigation structure and user flow. Site map Interactive elements
+                                    and visual design aspects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Content Strategy</h3>
+                                <p>SEO strategy for content optimization. ** your ‘best guess’ for now* Keyword Research
+                                    Relevant keywords to short films, film festivals, and specific event details On-Page
+                                    SEO Title tags and meta descriptions URL structure Header tags Image ALT text Social
+                                    Media Integration Add social media sharing buttons (Instagram, Facebook, Twitter/X)
+                                    Analytics and Monitoring Google Analytics Schema Markup UX Responsive design</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Testing & Quality Assurance</h3>
+                                <p>User-Centered Design User Research User Flows Visual Design Consistency Typography
+                                    and Color Scheme Legibility Design for compliance with accessibility standards
+                                    (e.g., WCAG) Interactivity and Animation Responsive Information Architecture (IA)
+                                    Content Hierarchy—organization of content and info hierarchy Consistent
+                                    Navigation—navigation elements are consistent and provide clear path for users
+                                    Usability Testing User Testing Results Wireframes and Prototypes Final design aligns
+                                    with approved wireframes Collaboration and Communication Feedback Implementation
+                                    Documentation—Review design documentation for completion and accuracy Client
+                                    Requirements Alignment with goals—Design aligns with the overall goals and
+                                    objectives of the project Scalability and Future Considerations design is scalable
+                                    for future updates or additional features</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 id="section4" class="py-3">Resources</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Team Member</th>
+                                        <th scope="col">Strengths</th>
+                                        <th scope="col">Role(s)</th>
+                                        <th scope="col">Responsibilities</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Dana Velencia</td>
+                                        <td>Designer, Xd/FIGMA/InDesign etc , Idea contributor, im cool</td>
+                                        <td>Project Plan Contributor</td>
+                                        <td>Make sure I actually do stuff</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Angeline Santos</td>
+                                        <td>Time management, organization, Design, Adobe Suite, XD,
+                                        </td>
+                                        <td>Project Plan Contributor
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Jehdi Aizon</td>
+                                        <td>Management, Adaptable, Coding, Creative
+                                        </td>
+                                        <td>Project Plan Contributor
+                                        </td>
+                                        <td>Team Lead
+                                            Ensuring schedules and deadlines are met
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Max Schafer</td>
+                                        <td>Programming, Technical skills
+                                        </td>
+                                        <td>Project Plan Contributor</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Dominic Yuschyshyn</td>
+                                        <td>Coding (CMPT major), all night death march’s, HTML, CSS, JS</td>
+                                        <td>Project Plan Contributor</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 class="py-3">Launch Plan</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Post-Launch Support and Maintenance Strategy</h3>
+                                <p>Hand-off document User Training—e.g. how to edit the code, add content Branding
+                                    guidelines—e.g. Typefaces and colors in use Mock-up references Code and development
+                                    team will provide support for 31 days after hand-in of final deliverables. Domain
+                                    and server renewal every January 29 with the cost of [insert $]. Analytics Website
+                                    analytic tools (Google Analytics)</p>
+                            </div>
+                        </div>
+                        <div class="custom-card col-lg-5">
+                            <div class="card-body">
+                                <h3>Contingency Plans</h3>
+                                <p>Identification of potential risks and challenges. Design Challenges Lack of user
+                                    research Design does not align with client needs and wants User feels overwhelmed by
+                                    information on the website Lack of clarity, legibility, and hierarchy Low
+                                    accessibility— e.g low contrast, non-descriptive text links, websites accessible to
+                                    various devices, etc. Bugs, or technical malfunctions that affect user experience.
+                                    Technical Failures Hosting server failures Scalability concerns - Inability to
+                                    handle increased traffic to the website Responsive design may have limitations due
+                                    to coding ability Communication Lack of information exchange when information are
+                                    revised or added Client is unresponsive Budget Financial constraints hosting costs
+                                    Client refusing to pay Time and resource management Tasks are facing unexpected
+                                    delays Resource intensive Content management File management Copyright Keeping data
+                                    secure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div style="background-color: #E7D7F1;">
+            <section class="postLaunch pb-5">
+                <div class="container">
+                    <div class="row py-5">
+                        <h2 class="py-3">Post-Launch Strategy</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center gx-5">
+
+                            <div class="col-lg-3">
+                                <div class="row">
+                                    <div class="custom-card col-lg-12">
+                                        <div class="card-body">
+                                            <h6 class="text-center">Payment</h6>
+                                            <p>Further revisions will require an agreed upon payment of $100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="custom-card col-lg-12 align-self-stretch">
+                                        <div class="card-body">
+                                            <h6 class="text-center">Design</h6>
+                                            <p>Legibility Hierarchy Application of branding</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="row">
+                                    <div class="custom-card col-lg-12">
+                                        <div class="card-body">
+                                            <h6 class="text-center">Marketing Strategy</h6>
+                                            <p>Social media posts 10s film trailer → black out → shows: Atlantis Short
+                                                Film Festival</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="custom-card col-lg-12">
+                                        <div class="card-body">
+                                            <h6 class="text-center">Website</h6>
+                                            <p>Function (links, buttons, responsive) Quality of mobile size
+                                                functionality</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-card col-lg-5">
+                                <div class="card-body">
+                                    <h6 class="text-center">Website</h6>
+                                    <p>Proper use of semantics in HTML and CSS Clean working documents Writing is of
+                                        quality, with no errors and proper grammar Complete set of deliverables Creative
+                                        solution to clients needs Features and Functions meets clients goals Adherence
+                                        to grid and alignments Design is translated into code Files are linked and
+                                        organized Hover and reactivity Overall quality of execution Nesting and labeling
+                                        of code with comments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container pb-5">
+                    <div class="row py-5">
+                        <h2 class="py-3">Appendix</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body px-5">
+                                    <h3>Client Project Statement</h3>
+                                    <p>
+                                        <span class="goals-highlight">Goals</span>
+                                        <span class="audience-highlight">Audience</span>
+                                        <span class="important-highlight">Important</span>
+                                        <span class="features-highlight">Features</span>
+                                    </p>
+                                    <p>We are excited to launch the <i>[Atlantis]</i> Short Film Festival's first
+                                        website, a dynamic digital platform aimed at <span
+                                            class="goals-highlight">celebrating and showcasing the talents of amateur
+                                            filmmakers</span> in our region. We've had enormous success running our
+                                        festival
+                                        offline for <i>a very</i> supportive and enthusiastic amateur filmmaking
+                                        audience for the
+                                        past three years, and now our <span class="goals-highlight">vision is to create
+                                            an
+                                            engaging, user-friendly website using WebFlow CMS</span>, ensuring <span
+                                            class="goals-highlight">ease of content management for our team with minimal
+                                            technical expertise.</span> </p>
+
+                                    <p>The site will <span class="features-highlight">feature web-specific branding and
+                                            a
+                                            basic logo mark</span>, reflecting the
+                                        festival's creative spirit. A key aspect of the website is a <span
+                                            class="goals-highlight">streamlined digital submission process</span>, <span
+                                            class="important-highlight">opening annually from September 1 to October
+                                            15</span>, to <span class="goals-highlight">attract a
+                                            diverse range of film genres</span> and <span
+                                            class="audience-highlight">encourage participation from approximately 10-30
+                                            creators</span>, resulting in an estimated 20-50 submissions. The
+                                        website will also prominently <span class="features-highlight">display the
+                                            previous
+                                            <b>3 years’</b> winning films <b>in each category</b></span> to <span
+                                            class="goals-highlight">inspire and attract new
+                                            submissions</span>, and showcase them to an online audience. We aim to
+                                        <span class="important-highlight">categorize these submissions into 3-7
+                                            genres</span>, with the top three or so in <span
+                                            class="goals-highlight">each
+                                            category being highlighted</span>. We ask that your
+                                        team chooses the categories – we will commit to whatever genres fit your own
+                                        preference and which you think will resonate best with the audience.
+                                    </p>
+
+                                    <p>
+                                        Our goal is to <span class="goals-highlight">launch the website by this
+                                            summer</span>, creating a buzz for the festival
+                                        and making the entire <span class="goals-highlight">film submission and viewing
+                                            process free and accessible</span> (we
+                                        are <i>generously</i> <span class="important-highlight">sponsored by
+                                            PBS.org</span>
+                                        and
+                                        would like to acknowledge that on our
+                                        website), with <span class="important-highlight">winners announced at the
+                                            festival
+                                            (and published on the website) on December 1</span>. This project is not
+                                        just
+                                        about building a website;
+                                        <span class="goals-highlight">it's about crafting a digital home that celebrates
+                                            the
+                                            art of filmmaking and nurtures a community of emerging talents</span>. 🎬
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row my-5">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body px-5">
+                                    <h3>Client Interview Questions</h3>
+                                    <h5>Objective and Goals</h5>
+                                    <div class="accordion" id="questions1">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-1"
+                                                    aria-expanded="true" aria-controls="interview-question-1">
+                                                    1 What are the primary objectives of the film festival
+                                                    website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-1">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            celebrating and showcasing the talents of
+                                                            amateur filmmakers
+                                                        </li>
+                                                        <li>
+                                                            vision is to create an engaging, user-friendly
+                                                            website using WebFlow CMS
+                                                        </li>
+                                                        <li>
+                                                            ease of content management for our team with
+                                                            minimal technical expertise
+                                                        </li>
+                                                        <li>streamlined digital submission process</li>
+                                                        <li>attract a diverse range of film genres</li>
+                                                        <li>inspire and attract new submissions</li>
+                                                        <li>each category being highlighted</li>
+                                                        <li>launch the website by this summer</li>
+                                                        <li>
+                                                            film submission and viewing process free and
+                                                            accessible
+                                                        </li>
+                                                        <li>
+                                                            crafting a digital home that celebrates the art
+                                                            of filmmaking and nurtures a community of
+                                                            emerging talents
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-2"
+                                                    aria-expanded="true" aria-controls="interview-question-2">
+                                                    2 What specific goals do you aim to achieve with the
+                                                    website? (e.g., promoting the festival, selling tickets,
+                                                    providing information, etc.)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-2">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-3"
+                                                    aria-expanded="true" aria-controls="interview-question-3">
+                                                    3 What are the areas of your website you would like to
+                                                    be showcased/focus on/ information you want to
+                                                    highlight?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-3">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-4"
+                                                    aria-expanded="true" aria-controls="interview-question-4">
+                                                    4 What are the challenges you face with your website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-4">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-5"
+                                                    aria-expanded="true" aria-controls="interview-question-5">
+                                                    5 What areas of your website are successful and which
+                                                    areas need focus?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-5">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-6"
+                                                    aria-expanded="true" aria-controls="interview-question-6">
+                                                    6 What features or information do you look for on a
+                                                    festival’s website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-6">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-7"
+                                                    aria-expanded="true" aria-controls="interview-question-7">
+                                                    7 Are there any specific media formats (like 360 degree
+                                                    VR videos) that you’re interested in incorporating into
+                                                    your website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-7">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-8"
+                                                    aria-expanded="true" aria-controls="interview-question-8">
+                                                    8 Are there any marketing/promotional tools you would
+                                                    like to integrate into the website? (e.g., email
+                                                    newsletter, sign-ups, promotional pop-up)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-8">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-9"
+                                                    aria-expanded="true" aria-controls="interview-question-9">
+                                                    9 Do you want your website to be mobile friendly?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-9">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5>Target Audience</h5>
+                                    <div class="accordion" id="questions2">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-10"
+                                                    aria-expanded="true" aria-controls="interview-question-10">
+                                                    10 Who is your target audience for the film festival?
+                                                    (e.g., age group, interests, demographics)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-10">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-11"
+                                                    aria-expanded="true" aria-controls="interview-question-11">
+                                                    11 What type of content do you plan to showcase on the
+                                                    website? (e.g., film schedules, trailers, event details,
+                                                    filmmaker information)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-11">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-12"
+                                                    aria-expanded="true" aria-controls="interview-question-12">
+                                                    12 How do you usually find out about film festivals like
+                                                    the Atlantis Film Festival?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-12">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-13"
+                                                    aria-expanded="true" aria-controls="interview-question-13">
+                                                    13 Will the website need to support multiple languages?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-13">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5>Design Style</h5>
+                                    <div class="accordion" id="questions3">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-14"
+                                                    aria-expanded="true" aria-controls="interview-question-14">
+                                                    14 What mood or atmosphere should the design convey?
+                                                    Name 5 adjectives. (e.g., professional, playful,
+                                                    serious)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-14">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-15"
+                                                    aria-expanded="true" aria-controls="interview-question-15">
+                                                    15 How would you describe the desired user experience
+                                                    for visitors navigating the website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-15">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-16"
+                                                    aria-expanded="true" aria-controls="interview-question-16">
+                                                    16 What actions do you want users to take on the
+                                                    website? (e.g., sign up, make a purchase, contact)
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-16">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-17"
+                                                    aria-expanded="true" aria-controls="interview-question-17">
+                                                    17 Are there any accessibility considerations or
+                                                    requirements?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-17">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-18"
+                                                    aria-expanded="true" aria-controls="interview-question-18">
+                                                    18 Do we want to deliver an online experience or
+                                                    encourage people to come in person?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-18">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5>Inspiration and References</h5>
+                                    <div class="accordion" id="questions4">
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-19"
+                                                    aria-expanded="true" aria-controls="interview-question-19">
+                                                    19 Are there any specific design preferences or themes
+                                                    you have in mind for the website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-19">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-20"
+                                                    aria-expanded="true" aria-controls="interview-question-20">
+                                                    20 Can you provide examples of other websites or designs
+                                                    that you find appealing?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-20">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#interview-question-21"
+                                                    aria-expanded="true" aria-controls="interview-question-21">
+                                                    21 Are there any existing resources or assets that can
+                                                    be leveraged for the website?
+                                                </button>
+                                            </h3>
+                                            <div class="accordion-collapse collapse" id="interview-question-21">
+                                                <div class="accordion-body">Body</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body px-5">
+                                    <h3>Competitor Analysis</h3>
+                                    <div class="d-flex justify-content-center gap-5 flex-wrap">
+                                        <a href="https://ocmdfilmfestival.com/">
+                                            <img src="./assets/ScreenShot Tool -20240119210520.png"
+                                                class=" img-thumbnail rounded img-fluid" alt="...">
+                                        </a>
+                                        <a href="https://intothewoods.nl/en/">
+                                            <img src="./assets/ScreenShot Tool -20240119210531.png"
+                                                class=" img-thumbnail rounded img-fluid" alt="...">
+                                        </a>
+                                        <a href="https://a24films.com/films">
+                                            <img src="./assets/ScreenShot Tool -20240119210553.png"
+                                                class="img-thumbnail rounded img-fluid" alt="...">
+                                        </a>
+                                        <a href="https://www.vsff.com/">
+                                            <img src="./assets/ScreenShot Tool -20240119210743.png"
+                                                class="img-thumbnail rounded img-fluid" alt="...">
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
     </div>
-    <section id="ScopeOfWork">
-      <div class="container-fluid pt-2">
-        <div class="row text-center my-5">
-          <h2 id="scrollspyHeading1">Scope of Work</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="accordion pb-5" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    <h3>
-                      Deliverables
-                    </h3>
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Project Plan (HTML & CSS designed) Research User definition Competitive Analysis Features
-                      Responsive Showcases amateur filmmakers Streamlined digital submission process Displays three
-                      previous winners Update Guide PDF and requirement documents Website mock-up Process Wireframes
-                      Sketches Style Tile Persona Site map User Journey Key interview points Moodboard Specifications of
-                      design and functionality. Responsive design Engaging and user-friendly website Streamlined digital
-                      submission process Free and accessible file submission and viewing process</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="accordion pb-5" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                  <h3>
-                    Content Requirements
-                  </h3>
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Atlantis Short Film Festival immerses its audience through the power of storytelling in various
-                    genres.
-                    Emerging filmmakers' works are dynamically showcased on the website– hoping to inspire future
-                    filmmakers. Atlantis Short Film Festival aims to bolster and nurture amateur filmmakers, while we
-                    create
-                    a dynamic and captivating hub to showcase various films.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <p>...</p>
-    <h4 id="scrollspyHeading3">Third heading</h4>
-    <p>...</p>
-    <h4 id="scrollspyHeading4">Fourth heading</h4>
-    <p>...</p>
-    <h4 id="scrollspyHeading5">Fifth heading</h4>
-    <p>...</p>
-  </section>
 
 
+
+    <footer>
+        <p class="text-center">A website made with 💚 by team Emerald <img src="./assets/icons8-emerald-32.png"
+                alt="Emerald"></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="./script.js"></script>
 
 </html>

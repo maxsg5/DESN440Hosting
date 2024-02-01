@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 /* colors 
 #676464
 #A79999
@@ -11,10 +12,6 @@
 
 body {
     background-color: #ACD9D8;
-}
-
-section {
-    width: 100%;
 }
 
 h1 {
@@ -46,10 +43,13 @@ h4 {
 }
 
 h5 {
+    margin-top: 1.2em;
+    margin-bottom: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     font-weight: bold;
     color: #707070;
+
 }
 
 h6 {
@@ -64,28 +64,46 @@ p {
     font-size: 20px;
     color: #000000;
 }
-
-li {
+th {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #000000;
 }
-
-.nav-link {
+td{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    color: #3a6561;
+    color: #000000;
+}
+table{
+    border-color: #508882 !important;
+    border-radius: 15px;
+    box-shadow: 0px 9px 9px #00000029;
 }
 
-.nav-link:hover {
-    background-color: #707070;
-    color: white;
+li {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
+
 }
 
-.nav-link:active {
-    background-color: #707070;
-    color: white;
+header {
+    background-color: #ACD9D8;
 }
+
+footer {
+    background-color: #ACD9D8;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    opacity: 1;
+    background-color: #3a6561;
+}
+
+
 
 .logo {
     font-family: 'Open Sans', sans-serif;
@@ -94,17 +112,79 @@ li {
     color: #3a6561;
 }
 
-.nav-pills .nav-link.active,
-.show>.nav-link {
-    background-color: #3a6561;
-    color: white;
+.hero {
+    background-color: #ACD9D8;
 }
 
-/* .card {
+
+.projectOverview {
+    border-radius: 129px 129px 0px 0px;
+    background: #F8F4EB 0% 0% no-repeat padding-box;
+}
+
+.timeline {
+    border-radius: 129px 129px 0px 0px;
+    background: #E7D7F1 0% 0% no-repeat padding-box;
+}
+
+.postLaunch {
+    border-radius: 129px 129px 0px 0px;
+    background: #F4CEC3 0% 0% no-repeat padding-box;
+}
+
+.card {
     border: none;
-    box-shadow: 0px 11px 9px #00000029;
+    box-shadow: 0px 9px 9px #00000029;
     background: #FCFCFC 0% 0% no-repeat padding-box
-} */
+}
+
+
+.accordion-button.collapsed::after {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url("./assets/icons8-plus-100.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-image: url("./assets/icons8-minus-96.png");
+
+}
+
+.postLaunchGrid {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "payment marketing codebase"
+        "design website codebase";
+}
+
+.codebase {
+    grid-area: codebase;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.marketing {
+    grid-area: marketing;
+}
+
+.design {
+    grid-area: design;
+}
+
+.website {
+    grid-area: website;
+}
+
 
 .custom-card {
     background-color: white;
@@ -112,30 +192,56 @@ li {
     border: none;
     box-shadow: 0px 9px 9px #00000029;
     background: #FCFCFC 0% 0% no-repeat padding-box;
-    padding: 30px;
+    padding: 45px;
     margin: 10px;
+
 }
 
-.dropdown-item {
+.goals-highlight {
+    background-color: #f9cb9c;
+}
+
+.audience-highlight {
+    background-color: #9fc5e8;
+}
+
+.important-highlight {
+    background-color: #b6d7a8;
+}
+
+.features-highlight {
+    background-color: #ea9999;
+}
+
+.nav-tabs {
+    border-color: #3a6561;
+}
+
+.nav-link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: #3a6561;
 }
 
-.section {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+/* .nav-link:hover {
+    background-color: #3a6561;
+    color: white;
 }
 
-.section.show {
-    display: block;
-    opacity: 1;
-}
+.nav-link[selected] {
+    background-color: #3a6561;
+    color: white;
+} */
 
+/* IDs */
+
+#MenuItem .nav-link:active {
+    background-color: #3a6561;
+    color: white;
+}
 
 #NavButton {
-    background-image: url('./images/icons8-hamburger.svg');
+    background-image: url('./assets/icons8-hamburger.svg');
     height: 50px;
     width: 50px;
 }
@@ -143,32 +249,24 @@ li {
 
 #navbar-custom {
     background-color: #ACD9D8;
-    border-bottom: solid #3a6561;
-}
-
-#ProjectOverview {
-    background-color:
-        #f8f4eb;
-}
-
-#ScopeOfWork {
-    background-color:
-        #e7d7f1;
-}
-
-#section1 {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
+    /* border-bottom: solid #3a6561; */
 }
 
 /* media query for mobile */
-@media only screen and (max-width: 991px) {}
-
-@media only screen and (max-width: 600px) {
-    /* .card {
+@media only screen and (max-width: 991px) {
+    .card {
         margin-top: 20px;
         margin-bottom: 20px;
-    } */
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     h1 {
         font-size: 70px;
@@ -200,8 +298,12 @@ li {
         font-size: 15px;
     }
 
-    /* .accordion{
+    li {
+        font-size: 15px;
+    }
+
+    .accordion {
         margin-top: 50px;
-    } */
+    }
 
 }
