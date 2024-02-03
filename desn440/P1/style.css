@@ -104,7 +104,21 @@ hr {
     background-color: #3a6561;
 }
 
+img{
+    /* filter for blackness */
+    filter: brightness(50%);
+}
 
+/* Classes */
+
+
+.slide-label{
+    color: white;
+}
+.btn-primary{
+    background-color: #3a6561;
+    border-color: #3a6561;
+}
 
 .logo {
     font-family: 'Open Sans', sans-serif;
@@ -205,7 +219,6 @@ hr {
     background: #FCFCFC 0% 0% no-repeat padding-box;
     padding: 45px;
     margin: 10px;
-
 }
 
 .goals-highlight {
