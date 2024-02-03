@@ -138,6 +138,11 @@ hr {
     background: #F4CEC3 0% 0% no-repeat padding-box;
 }
 
+.launchPlan {
+    border-radius: 129px 129px 0px 0px;
+    background: #f3f4c3 0% 0% no-repeat padding-box;
+}
+
 .card {
     border: none;
     box-shadow: 0px 9px 9px #00000029;
