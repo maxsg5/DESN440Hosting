@@ -267,7 +267,7 @@ img{
   .table tbody td:first-child {
     position: sticky;
     left: 0;
-    background-color: #fff; /* Change this to match your table's background color */
+    background-color: #fff; 
     z-index: 2;
   }
   
@@ -276,7 +276,6 @@ img{
     z-index: 1;
   }
   
-  /* Optional: Style to indicate that the table is scrollable */
   .table-responsive::-webkit-scrollbar {
     height: 0.75rem;
   }
