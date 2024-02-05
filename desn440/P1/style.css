@@ -163,6 +163,22 @@ img{
     background: #FCFCFC 0% 0% no-repeat padding-box
 }
 
+.pill {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    border-radius: 1em;
+    width: auto;
+}
+
+.table-list {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
 
 .accordion-button.collapsed::after {
     height: 50px;
