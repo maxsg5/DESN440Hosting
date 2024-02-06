@@ -65,17 +65,20 @@ p {
     font-size: 20px;
     color: #000000;
 }
+
 th {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color: #000000;
 }
-td{
+
+td {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #000000;
 }
-table{
+
+table {
     border-color: #508882 !important;
     border-radius: 15px;
     box-shadow: 0px 9px 9px #00000029;
@@ -104,7 +107,7 @@ hr {
     background-color: #3a6561;
 }
 
-img{
+img {
     /* filter for blackness */
     filter: brightness(50%);
 }
@@ -112,10 +115,11 @@ img{
 /* Classes */
 
 
-.slide-label{
+.slide-label {
     color: white;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #3a6561;
     border-color: #3a6561;
 }
@@ -263,48 +267,52 @@ img{
     color: #3a6561;
 }
 
-/* .nav-link:hover {
+.nav-link:hover {
     background-color: #3a6561;
     color: white;
 }
 
-.nav-link[selected] {
+.nav-link:active {
     background-color: #3a6561;
     color: white;
-} */
+}
 
 
 /* Custom CSS to make the first column of a table sticky */
 .table-responsive {
     overflow-x: auto;
-  }
-  
-  .table thead th:first-child, 
-  .table tbody td:first-child {
+}
+
+.table thead th:first-child,
+.table tbody td:first-child {
     position: sticky;
     left: 0;
-    background-color: #fff; 
+    background-color: #fff;
     z-index: 2;
-  }
-  
-  /* This is to ensure the z-index of the sticky column is higher than the other elements */
-  .table thead th {
+}
+
+/* This is to ensure the z-index of the sticky column is higher than the other elements */
+.table thead th {
     z-index: 1;
-  }
-  
-  .table-responsive::-webkit-scrollbar {
+}
+
+.table-responsive::-webkit-scrollbar {
     height: 0.75rem;
-  }
-  
-  .table-responsive::-webkit-scrollbar-thumb {
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
     background: #adb5bd;
     border-radius: 0.75rem;
-  }
-  
-  .table-responsive::-webkit-scrollbar-track {
+}
+
+.table-responsive::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
+}
+
+.navbar-brand:hover {
+    filter: grayscale(100%)
+}
+
 
 
 /* IDs */
@@ -320,64 +328,84 @@ img{
     width: 50px;
 }
 
+#NavButton:hover {
+    filter: grayscale(100%)
+}
 
 #navbar-custom {
     background-color: #ACD9D8;
     /* border-bottom: solid #3a6561; */
 }
 
-/* media query for mobile */
-@media only screen and (max-width: 991px) {
-    .card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-
+#Hero {
+    /* fade in effect */
+    animation: fadeIn 2s;
 }
 
-@media only screen and (max-width: 600px) {
-    .card {
-        margin-top: 20px;
-        margin-bottom: 20px;
+/* make fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
 
-    h1 {
-        font-size: 70px;
+    100% {
+        opacity: 1;
     }
 
-    h2 {
-        font-size: 30px;
-        text-align: center;
-    }
 
-    h3 {
-        font-size: 20px;
-    }
 
-    h4 {
-        font-size: 15px;
-    }
+    /* media query for mobile */
+    @media only screen and (max-width: 991px) {
+        .card {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-    h5 {
-        font-size: 15px;
 
     }
 
-    h6 {
-        font-size: 10px;
-    }
+    @media only screen and (max-width: 600px) {
+        .card {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-    p {
-        font-size: 15px;
-    }
+        h1 {
+            font-size: 70px;
+        }
 
-    li {
-        font-size: 15px;
-    }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
 
-    .accordion {
-        margin-top: 50px;
-    }
+        h3 {
+            font-size: 20px;
+        }
 
-}
+        h4 {
+            font-size: 15px;
+        }
+
+        h5 {
+            font-size: 15px;
+
+        }
+
+        h6 {
+            font-size: 10px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        .accordion {
+            margin-top: 50px;
+        }
+
+    }
