@@ -358,6 +358,17 @@ img {
 #Hero {
     /* fade in effect */
     animation: fadeIn 3s;
+    position: relative;
+    
+}
+#mask {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff00005e; /* Color of the circle */
+    pointer-events: none; /* Ignore mouse events */
+    mix-blend-mode: difference; /* Ensure the circle inverts colors beneath it */
 }
 
 /* make fadeIn animation */
@@ -379,6 +390,12 @@ img {
         margin-bottom: 20px;
     }
 
+}
+
+@media only screen and (max-width: 1201px) {
+    #mask {
+        display: none;
+    }
 
 }
 
@@ -425,5 +442,6 @@ img {
     .accordion {
         margin-top: 50px;
     }
+    
 
 }
