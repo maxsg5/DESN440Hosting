@@ -139,6 +139,7 @@ img {
 .projectOverview {
     border-radius: 129px 129px 0px 0px;
     background: #F8F4EB 0% 0% no-repeat padding-box;
+    z-index: 1;
 }
 
 .timeline {
@@ -334,7 +335,11 @@ img {
 }
 
 /* IDs */
-
+svg {
+    position: fixed;
+    z-index: 0;
+    transform: translate(0px, 100px,0px);
+}
 #MenuItem .nav-link:active {
     background-color: #3a6561;
     color: white;
