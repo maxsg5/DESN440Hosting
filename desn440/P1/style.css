@@ -111,6 +111,10 @@ hr {
 
 /* Classes */
 
+.offcanvas{
+    background-color: #ACD9D8;
+}
+
 .carousel-img {
     /* filter for blackness */
     filter: brightness(50%);
