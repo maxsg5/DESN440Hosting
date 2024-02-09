@@ -283,6 +283,10 @@ hr {
     color: white;
 }
 
+#MenuItem > a{
+    height: 100%;
+}
+
 
 /* Custom CSS to make the first column of a table sticky */
 .table-responsive {
