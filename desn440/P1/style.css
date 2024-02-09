@@ -108,6 +108,13 @@ hr {
     background-color: #3a6561;
 }
 
+ul li ul li {
+    font-style: italic;
+}
+ol li ul li {
+    font-style: italic;
+}
+
 
 /* Classes */
 
