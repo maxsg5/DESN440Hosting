@@ -23,3 +23,10 @@ document.addEventListener('mousemove', function (e) {
     mask.style.left = `${newX}px`;
     mask.style.top = `${newY}px`;
 }, false);
+
+// on click event for the disclaimer button
+document.getElementById('disclaimerButton').addEventListener('click', function() {
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+    myModal.show();
+});
+
