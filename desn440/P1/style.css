@@ -10,6 +10,7 @@
 #3a6561
 */
 
+/* Element styling */
 body {
     background-color: #ACD9D8;
     overflow-x: hidden;
@@ -328,11 +329,11 @@ hr {
     overflow: hidden;
     width: 420px;
     height: 420px;
-    /* padding-top: 56.25%; */
+    padding-top: 56.25%;
     /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
+
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -366,7 +367,6 @@ svg {
 
 #navbar-custom {
     background-color: #ACD9D8;
-    /* border-bottom: solid #3a6561; */
 }
 
 #Hero {
@@ -385,7 +385,7 @@ svg {
     mix-blend-mode: difference; /* Ensure the circle inverts colors beneath it */
 }
 
-/* make fadeIn animation */
+/* fadeIn animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -397,7 +397,7 @@ svg {
 }
 
 
-/* media query for mobile */
+/* media query for mobile responsiveness */
 @media only screen and (max-width: 991px) {
     .card {
         margin-top: 20px;
