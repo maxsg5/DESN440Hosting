@@ -107,13 +107,13 @@ hr {
     background-color: #3a6561;
 }
 
-img {
-    /* filter for blackness */
-    filter: brightness(50%);
-}
 
 /* Classes */
 
+.carousel-img {
+    /* filter for blackness */
+    filter: brightness(50%);
+}
 
 .slide-label {
     color: white;
@@ -269,11 +269,16 @@ img {
 }
 
 .nav-link:hover {
-    background-color: #3a6561;
+    background-color: #23998E;
     color: white;
 }
 
 .nav-link:active {
+    background-color: #3a6561;
+    color: white;
+}
+
+.navbar-nav .nav-link.active{
     background-color: #3a6561;
     color: white;
 }
