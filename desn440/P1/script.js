@@ -3,6 +3,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 //mouse event for the circle following the mouse in the Hero section.
+//this function is called every time the mouse moves.
 document.addEventListener('mousemove', function (e) {
     const mask = document.getElementById('mask');
     const hero = document.getElementById('Hero');
